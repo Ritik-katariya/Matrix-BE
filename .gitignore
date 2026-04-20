@@ -1,0 +1,59 @@
+### Environment and secrets
+.env
+.env.*
+!.env.example
+
+### Virtual environments
+venv/
+venv/*
+.venv/*
+env/*
+ENV/*
+
+### Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+### Packaging/build artifacts
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+### Test and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+### Type checkers and linters
+.mypy_cache/
+.pyre/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+
+### Jupyter
+.ipynb_checkpoints/
+
+### Logs and runtime files
+*.log
+*.pid
+
+### IDE/editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+### OS files
+.DS_Store
+Thumbs.db
+

@@ -1,0 +1,33 @@
+# ── Core Framework ─────────────────────────────────────────────────────────────
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-dotenv>=1.0.1
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+
+# ── LangChain / LangGraph ──────────────────────────────────────────────────────
+langchain>=1.2.0
+langgraph>=1.1.0
+langchain-community>=0.3.0
+langchain-openai>=1.1.0
+langchain-nvidia-ai-endpoints>=1.2.0
+langchain-ollama>=1.1.0
+
+# ── STT ────────────────────────────────────────────────────────────────────────
+faster-whisper>=1.0.3        # Large-v3-Turbo, CPU-optimized
+deepgram-sdk>=3.5.0          # Fallback when mobile on slow internet
+
+# ── TTS ────────────────────────────────────────────────────────────────────────
+httpx>=0.27.0                # Fish Audio + Gnani HTTP clients (async)
+sounddevice>=0.4.7           # Local audio playback
+numpy>=1.26.0
+
+# ── Audio Processing ───────────────────────────────────────────────────────────
+pyaudio>=0.2.14              # Microphone capture
+webrtcvad-wheels>=2.0.10           # Voice Activity Detection (no silence processing)
+scipy>=1.13.0                # Audio resampling
+
+# ── Utilities ──────────────────────────────────────────────────────────────────
+aiofiles>=23.2.1
+asyncio-throttle>=1.0.2
+structlog>=24.1.0            # Production structured logging
