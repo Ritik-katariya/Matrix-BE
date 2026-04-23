@@ -24,7 +24,7 @@ class Settings(BaseSettings):
     ollama_base_url: str = "http://localhost:11434"
 
     # Model names
-    nvidia_model: str = "nvidia/llama-3.1-nemotron-70b-instruct"
+    nvidia_model: str = "meta/llama-3.1-8b-instruct"
     openai_model: str = "gpt-4o"
     ollama_model: str = "llama3.2:latest"
 
